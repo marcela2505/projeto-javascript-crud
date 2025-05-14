@@ -1,0 +1,27 @@
+<!-- Página de Login -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="estilo/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <h1>Login</h1>
+  <form id="login-form">
+    <input type="email" id="login-email" placeholder="Email" required>
+    <div class="senha-container">
+      <input type="password" id="login-senha" placeholder="Senha" required>
+      <i data-lucide="eye" class="olho" onclick="toggleSenha('login-senha', this)"></i>
+    </div>
+    <button type="submit">Entrar</button>
+    <p id="login-erro" class="erro"></p>
+  </form>
+  <p>Não tem conta? <a href="cadastro.html">Cadastre-se</a></p>
+
+  <script src="script/script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

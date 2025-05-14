@@ -1,0 +1,30 @@
+<!-- Página de Cadastro -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro</title>
+  <link rel="stylesheet" href="estilo/style.css">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <h1>Cadastro</h1>
+  <form id="cadastro-form">
+    <input type="text" id="nome" placeholder="Nome" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <div class="senha-container">
+      <input type="password" id="senha" placeholder="Senha" required>
+      <i data-lucide="eye" class="olho" onclick="toggleSenha('senha', this)"></i>
+    </div>
+    <input type="text" id="cpf" placeholder="CPF" required>
+    <input type="date" id="data-nasc" required>
+    <button type="submit">Cadastrar</button>
+    <p id="cadastro-erro" class="erro"></p>
+  </form>
+  <p>Já tem conta? <a href="index.html">Login</a></p>
+
+  <script src="script/script.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
